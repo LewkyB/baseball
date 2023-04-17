@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(68, 66, 66);
+}
+
+p {
+    color: white;
+    background-color: purple;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 16px;
+}
+
+.select-area {
+    display: flex;
+    justify-content: center;
+}
+
+.split {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.team-split {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-split {
+    display: flex;
+    flex-direction: column;
+}
