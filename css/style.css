@@ -3,12 +3,7 @@ body {
     background-color: rgb(68, 66, 66);
 }
 
-p {
-    color: white;
-    background-color: purple;
-}
-
-.container {
+.baseball-container {
     display: flex;
     flex-direction: column;
     padding: 8px;
@@ -36,4 +31,47 @@ p {
 .player-split {
     display: flex;
     flex-direction: column;
+}
+
+.cube-container {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
+    padding-left: 8px;
+}
+
+#cube {
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 20s linear infinite;
+    font-weight: bold;
+}
+
+#cube>div {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateX(-0.1turn) rotateY(0turn);
+    }
+
+    to {
+        transform: rotateX(-0.1turn) rotateY(1turn);
+    }
+}
+
+#cube>div>div {
+    animation: un-spin 20s linear infinite;
+}
+
+@keyframes un-spin {
+    from {
+        transform: rotateY(0turn);
+    }
+
+    to {
+        transform: rotateY(-1turn);
+    }
 }
